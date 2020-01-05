@@ -1,0 +1,37 @@
+
+1) When user clicks on generate password, my program begins
+    - perhaps call my function when this button is clicked
+
+
+2) Prompt user of how many characters?
+    - validate that user typed in a number that is 8 - 128
+    
+    if number user typed in is less than < 8 OR > more than 128
+        ask user to try again
+
+    else
+        proceed to next steps!
+
+3) Charcter types, user must select must select at least 1
+
+    Character Types:
+        Special characters
+        Numeric characters
+        Lowercase characters
+        Uppercase characters
+
+    How can we solve this?
+
+    - create confirms that stores the true/false booleans of each type
+        i.e. "Click ok if you want special characters"
+
+    - We should have 4 confirm questions
+
+4) Generate password
+
+    Give the size of user input we can now setup a loop
+
+    For each iteration of the loop what can we do?
+
+        
+
