@@ -1,4 +1,4 @@
-// Assignment Code
+// Assignment Code, ties into event listeners below.
 var generateBtn = document.querySelector("#generate");
 var clipboardBtn = document.querySelector("#password");
 
@@ -78,17 +78,19 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
-  // copyBtn.removeAttribute("disabled");
-  //copyBtn.focus();
 }
 
+//Code setup from w3schools.com
 function copyToClipboard() {
   var copyPassword = document.getElementById("password");
+  //selects the text field
   copyPassword.select();
+  //gets text inside text field copied
   document.execCommand("copy");
+  //notifies user password has been copied
   alert("Copied your password: " + copyPassword.value);
 }
+//Adds event listener for copy button
 clipboardBtn.addEventListener("click", copy);
 
 // Added event listener to generate button
