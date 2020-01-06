@@ -54,18 +54,22 @@ header {
   min-height: 100px;
 }
 
-.card-footer::before {
+#card-footer::before {
   content: " ";
-  display: block;
+  display: inline-block; 
   width: 100%;
   background: #e7e9eb;
   height: 2px;
 }
 
-.card-footer::after {
+#card-footer::after {
   content: " ";
-  display: block;
+  display: inline-block; 
   clear: both;
+}
+
+#copy {
+  margin-left: 100px;
 }
 
 .btn {
