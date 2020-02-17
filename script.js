@@ -74,12 +74,15 @@ function generatePassword() {
 
 //This allows the password to be seen by the user
 function writePassword() {
-  var password = generatePassword();
+  var passwordGenerate = generatePassword();
   var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
+  if (passwordGenerate === undefined){
+    return;
+  
+}else{
+passwordText.value = passwordGenerate
 }
-
+}
 //Code setup from w3schools.com
 function copyToClipboard() {
   var copyPassword = document.getElementById("password");
