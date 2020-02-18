@@ -28,7 +28,6 @@ The type of characters a user can select are:
 [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://lturner19.github.io/Random-Password-Generator/)
 
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-
 [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
 
 
@@ -41,7 +40,10 @@ The type of characters a user can select are:
 
 ![image](assets/pw_generator.jpg)
 
+2.  Question Prompt
 
-2. Clipboard Function
+![image](assets/pw_question.jpg)
+
+3. Clipboard Function
 
 ![image](assets/pw_clipboard.jpg)
