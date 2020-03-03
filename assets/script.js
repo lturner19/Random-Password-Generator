@@ -10,7 +10,7 @@ var number = ["0", "1", "0", "2", "3", "4", "5", "6", "7", "8", "9"];
 var symbol = ["!", "@", "#", "$", "%", "^", "&", "*", "?"];
 
 //empty array that holds the user chosen characters, which can then be randomized.
-randomCharacters = [];
+chosenCharacters = [];
 
 //holds the randomized value 
 var password = "";
@@ -33,7 +33,7 @@ function generatePassword() {
     function choiceLowerCase() {
       var userAlpha = confirm("Would you like to use lower letters?")
       if (userAlpha) {
-        randomCharacters = randomCharacters.concat(lowerCaseAlpha);
+        chosenCharacters = chosenCharacters.concat(lowerCaseAlpha);
 
       }
     }
@@ -41,28 +41,28 @@ function generatePassword() {
     function choiceUpperCase() {
       var userBeta = confirm("Would you like to use capital letters?")
       if (userBeta) {
-        randomCharacters = randomCharacters.concat(upperCaseAlpha);
+        chosenCharacters = chosenCharacters.concat(upperCaseAlpha);
       }
     }
 
     function choiceNumber() {
       var userNum = confirm("Would you like to use numbers?")
       if (userNum) {
-        randomCharacters = randomCharacters.concat(number);
+        chosenCharacters = chosenCharacters.concat(number);
       }
     }
 
     function choiceSymbol() {
       var userSym = confirm("Would you like to use symbols?")
       if (userSym) {
-        randomCharacters = randomCharacters.concat(symbol);
+        chosenCharacters = chosenCharacters.concat(symbol);
       }
     }
 
     //This will randomize and put together the characters based on the user's response to questions.
 
     for (a = 0; a < charcNumber; a++) {
-      password = password.concat(randomCharacters[Math.floor(Math.random() * Math.floor(randomCharacters.length))]);
+      password = password.concat(chosenCharacters[Math.floor(Math.random() * Math.floor(chosenCharacters.length))]);
 
       console.log(password[a]);
     }
@@ -102,10 +102,13 @@ function copyToClipboard() {
 }
 
 
-//Adds event listener for copy button
+
+// Adds event listener and calls password function
+generateBtn.addEventListener("click", writePassword);
+
+
+//Adds event listener for copy button and calls clipboard function
 clipboardBtn.addEventListener("click", copyToClipboard);
 
-// Added event listener to generate button
-generateBtn.addEventListener("click", writePassword);
 
 

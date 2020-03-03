@@ -38,12 +38,12 @@ The type of characters a user can select are:
 
 1. Password generator
 
-![image](assets/pw_generator.jpg)
+![image](assets/images/pw_generator.jpg)
 
 2.  Question Prompt
 
-![image](assets/pw_question.jpg)
+![image](assets/images/pw_question.jpg)
 
 3. Clipboard Function
 
-![image](assets/pw_clipboard.jpg)
+![image](assets/images/pw_clipboard.jpg)
